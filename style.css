@@ -14,7 +14,7 @@ nav a:hover { color: #cda434; } /* Ein edler Gold-Ton beim Drüberfahren */
 /* 3. Die Hero-Section */
 .hero {
     height: 90vh; /* Nimmt fast den ganzen Bildschirm ein */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1542314831-c53cd453a566?q=80&w=1920&auto=format&fit=crop');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/hero.jpg.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
