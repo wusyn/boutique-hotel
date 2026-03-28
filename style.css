@@ -77,3 +77,36 @@ nav a:hover { color: #cda434; } /* Ein edler Gold-Ton beim Drüberfahren */
 .zimmer-info h3 { margin-bottom: 10px; color: #111; }
 .zimmer-info p { margin-bottom: 15px; color: #666; font-size: 15px; line-height: 1.5; }
 .preis { display: block; font-weight: bold; color: #cda434; font-size: 18px; }
+/* --- KONTAKT SEITE --- */
+.kontakt-container {
+    display: flex;
+    flex-wrap: wrap; /* Bricht um, wenn der Bildschirm zu klein wird */
+    gap: 50px;
+    padding: 0 50px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hotel-formular, .karten-box {
+    flex: 1; /* Beide Boxen teilen sich den Platz genau 50/50 */
+    min-width: 300px; /* Keine Box darf schmaler als 300px werden */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Formular Felder aufhübschen */
+.hotel-formular input, .hotel-formular textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+/* Die Karte soll die Box komplett ausfüllen */
+.karten-box iframe {
+    border-radius: 5px;
+    min-height: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
