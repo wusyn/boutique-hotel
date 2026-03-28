@@ -34,3 +34,46 @@ nav a:hover { color: #cda434; } /* Ein edler Gold-Ton beim Drüberfahren */
     text-transform: uppercase; letter-spacing: 2px;
 }
 .btn:hover { background-color: #b58d27; }
+/* --- ZIMMER SEITE --- */
+.bereichs-titel {
+    text-align: center;
+    padding: 50px 20px 20px;
+    font-size: 36px;
+}
+
+.zimmer-galerie {
+    display: grid;
+    /* Diese magische Zeile macht die Galerie automatisch responsive! */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.zimmer-karte {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden; /* Schneidet die spitzen Ecken der Bilder ab! */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    transition: transform 0.3s; /* Bereitet den Schwebe-Effekt vor */
+}
+
+.zimmer-karte:hover {
+    transform: translateY(-10px); /* Die Karte schwebt leicht nach oben */
+}
+
+.zimmer-karte img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Verhindert, dass Bilder verzerrt werden */
+}
+
+.zimmer-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.zimmer-info h3 { margin-bottom: 10px; color: #111; }
+.zimmer-info p { margin-bottom: 15px; color: #666; font-size: 15px; line-height: 1.5; }
+.preis { display: block; font-weight: bold; color: #cda434; font-size: 18px; }
